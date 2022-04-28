@@ -3,6 +3,9 @@
 ## Description
 Take notes in a simple text editor that works on and offline!
 
+## Deployed Site
+https://peaceful-cove-26015.herokuapp.com/
+
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
