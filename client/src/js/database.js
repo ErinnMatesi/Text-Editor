@@ -12,7 +12,7 @@ const initdb = async () =>
     },
   });
 
-export const putDb = async (content) => {
+export const putDb = async (id, content) => {
   console.log('putDb implemented');
 // connects to DB
   const contactDb = await openDB('jate', 1);
@@ -21,7 +21,7 @@ export const putDb = async (content) => {
   // open the object store
   const store = tx.objectStore('jate');
 // use put method on the store
-  const request = store.put(content);
+  const request = store.put({ id: id, content: content});
 
   const result = await request;
   console.log('data changed in the database', result);
